@@ -66,4 +66,17 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Compose dependencies
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.1")
+
+    // Coil
+    implementation ("io.coil-kt:coil-compose:1.4.0")
+
+    // WorkManager with Coroutines
+    implementation ("androidx.work:work-runtime-ktx:2.9.0")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
 }
