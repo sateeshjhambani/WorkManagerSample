@@ -7,15 +7,13 @@ import retrofit2.http.GET
 
 interface FileApi {
 
-//    @GET("/wp-content/uploads/2022/02/220849-scaled.jpg")
-    @GET("/photo-1699960586115-254faf72f378.jpg")
+    @GET("/photo-1707327956851-30a531b70cda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg")
     suspend fun downloadImage(): Response<ResponseBody>
 
     companion object {
 
         val instance by lazy {
             Retrofit.Builder()
-//                .baseUrl("https://pl-coding.com")
                 .baseUrl("https://images.unsplash.com")
                 .build()
                 .create(FileApi::class.java)
