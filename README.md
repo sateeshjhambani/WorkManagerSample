@@ -4,6 +4,8 @@ The app provides a sample usage of Jetpack's WorkManager API to chain a couple o
 
 The first is a DownloadWorker that downloads an image from [Unsplash](https://images.unsplash.com), saves it to the app cache, and returns the image URI. This worker is then chained to the second worker called ColorFilterWorker, which takes the original image, applies a colour filter, and returns the filtered image URI.
 
+![WorkManagerSample](https://github.com/sateeshjhambani/WorkManagerSample/assets/60574717/a48e43a0-7ac9-4b1b-8b99-8db5d900f756)
+
 ## Usage
 
 The DownloadWorker worker calls an API to download an image, stores it in the app's cache directory, and returns the image URI.
