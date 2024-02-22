@@ -16,8 +16,8 @@ import java.io.IOException
 import kotlin.random.Random
 
 class DownloadWorker(
-    workerParams: WorkerParameters,
-    private val context: Context
+    private val context: Context,
+    private val workerParams: WorkerParameters
 ) : CoroutineWorker(context, workerParams) {
 
     override suspend fun doWork(): Result {
